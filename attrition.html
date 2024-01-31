@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Employee Attrition Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>Employee Attrition using Decision Tree</strong><br />
+					Pandas | SKLearn | Decision Tree<br />
+					</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Employee Attrition using Decision Tree<br />
+							</h2>
+						</header>
+						<h3>Applying decision tree method</h3>
+
+A decision tree is a very flexible and popular method of classifying objects. It is a form of supervised machine learning where we continuously split data according to a certain parameter (Chakure, 2022). There are two main types of decision trees: Classification Trees and Regression Trees. In this project, I will be applying the classification tree to classify data in an employee attrition dataset.</br>
+<h3>Dataset</h3>
+In this project I create a model that predicts employee attrition using the famous IBM HR Analytics Employee Attrition & Performance dataset obtained from Kaggle (Pavansubhash, 2017) It is a fictional dataset that was created by IBM data scientists. The dataset has personal, benefits and HR information for employees in thirty-five variables and 1470 records. 
+I apply decision tree to map out a path that leads to attrition by using sixteen variables out of twenty-six available in the dataset using python, specifically Scikit-Learn library. From scikit-Learn, I imported decisiontreeclassifier, train_test_split and metric modules. The resulting model should be able to predict attrition or classify employees according to those that are likely to leave and those likely to stay, based on historical data.</br>
+
+<h3>Data Preparation</h3>
+The first task was to change the values in the ‘Attrition’ field, which is the target field, to have a zero in place of a ‘No,’ and one in place of a ‘Yes,’ 
+Secondly, the dataset was split to select sixteen variables as feature variables, and the ‘Attrition’ variable as the target variable. The dataset was also split into train and test data forming 80 and 20 percent, respectively. </br>Using the Decision Tree Classifier module, the decision tree object was created fitting in the X_train data (features) and Y_train (target). Figure 4 shows the creation of the model, and code that predicts using the training and testing data.</br>Obviously, using the training data should have accuracy of 100%, and testing data yielded 71%. See figure 5 below:</br>The resulting tree has been visualized in figure 6 (code) and figure 7 (diagram) below. Looking at the diagram, it is clear that the model has been overfitted and we can apply pruning to improve the accuracy from 71%, while reducing the levels of the tree.</br>
+
+
+
+
+						
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jeffmitini</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
